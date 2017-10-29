@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Esther Nzuzi</title>
+    <meta name="description" content="Store Page for Esther Nzuzi">
+    <meta name="keywords" content="shop,purses, jewellery">
+    <meta name="Richelle Newby" content="NYU">
+    <link rel="stylesheet" type="text/css" href="../css/about.css"> </head>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab|Rubik:900');
+</style>
+<!-- 
+        ______________________________________________________________
+
+                        NAVIGATION HTML
+        _________________________________________________________________
+
+        -->
+<nav>
+    <div class="topnav" id="myTopnav">
+        <a href="#"><img id="logo" src="../img/logo_pb.png" width=100 height=100 alt="EN Logo"> </a>
+        <a href="../index.html">Home</a>
+        <a href="index.html">Shop</a>
+        <a href="../WhoWeAre/index.html">Who We Are</a>
+        <a class="active" href="index.html">About</a>
+        <a href="../ContactUs/index.html">Contact Us</a>
+        <a href="javascript:void(0);" style="font-size:20px;" class="icon" onclick="myFunction()">&#9776;</a>
+    </div>
+</nav>
+</header>
+
+<body>
+    <div class=headings>
+        <h1> ABOUT </h1>
+    </div>
+    <div class=space> </div>
+    <div class="w3-content w3-display-container">
+        <img class="slide" src="../img/DSC_0066.JPG">
+        <img class="slide" src="../img/DSC_0586.JPG">
+        <img class="slide" src="../img/DSC_0068.JPG">
+        <img class="slide" src="../img/DSC_0053.JPG">
+        <img class="slide" src="../img/DSC_1080.JPG">
+        <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10096;</button>
+        <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+    </div>
+    <script>
+    /* SlideShow Provided by W3 Schools */
+    var slideIndex = 1;
+    showDivs(slideIndex);
+
+    function plusDivs(n) {
+        showDivs(slideIndex += n);
+    }
+
+    function showDivs(n) {
+        var i;
+        var x = document.getElementsByClassName("slide");
+        if (n > x.length) { slideIndex = 1 }
+        if (n < 1) { slideIndex = x.length }
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+        }
+        x[slideIndex - 1].style.display = "block";
+    }
+    </script>
+    <div class=space> </div>
+    <div class=headings2>
+        <h2> OVERVIEW</h2>
+    </div>
+    <div class="team_member">
+        <div>
+            <p style="font-family: Roboto; color:white;line-height: 200%;font-weight: bold">
+                Esther Nzuzi is a social enterprise aimed to reach out to women and girls across the world, giving them the tools necessary to support their dreams. For the moment, Esther Nzuzi only sells african inspired bags, a line called Purses of Purpose. Purses of Purpose is known for its convenient, on-the- go, comfortable, and colorful hobo bags. They serve as a perfect gift; the bags can be used as anything from a dance bag to a casual hanging-out- with-friends bag. The lightweight bags are big enough to store anything from shoes to sweaters to books to makeup. We try our best to make sure all zippers work prior to sending off the bags. The bags are handmade, although checked for quality, they are advised to be taken care of gently. Read reviews on my <a href="http://www.etsy.com/shop/pursesofpurpose">Etsy </a> to see why customers love the bags.
+            </p>
+        </div>
+    </div>
+    <div class=space> </div>
+    <div class=headings2>
+        <h2> MISSION STATEMENT</h2>
+    </div>
+    <div class="team_member">
+        <p style="font-family: Roboto; color:white;line-height: 200%;font-weight: bold">
+                Esther Nzuzi is a social enterprise aimed to reach out to women and girls across the world, giving them the tools necessary to support their dreams. For the moment, Esther Nzuzi only sells african inspired bags, a line called Purses of Purpose. Purses of Purpose is known for its convenient, on-the- go, comfortable, and colorful hobo bags. They serve as a perfect gift; the bags can be used as anything from a dance bag to a casual hanging-out- with-friends bag. The lightweight bags are big enough to store anything from shoes to sweaters to books to makeup. We try our best to make sure all zippers work prior to sending off the bags. The bags are handmade, although checked for quality, they are advised to be taken care of gently. Read reviews on my <a href="http://www.etsy.com/shop/pursesofpurpose">Etsy </a> to see why customers love the bags.
+            </p>
+    </div>
+    <script>
+    function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+            x.className += " responsive";
+        } else {
+            x.className = "topnav";
+        }
+    }
+    </script>
+</body>
+<footer class="footer">
+    &copy; 2017 Copyright. All rights reserved.
+    <ul class="social_icons">
+        <li> <a href="https://www.facebook.com/esthernzuzi/" class="fa fa-facebook"></a></li>
+        <li><a href="https://twitter.com/esthernzuziLLC" class="fa fa-twitter"></a></li>
+        <li><a href="https://www.instagram.com/esthernzuzillc/" class="fa fa-instagram"></a></li>
+        <li><a href="https://www.pinterest.com/esthernzuziLLC/" class="fa fa-pinterest"></a></li>
+    </ul>
+</footer>
+
+</html>
