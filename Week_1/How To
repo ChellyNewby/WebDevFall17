@@ -1,0 +1,13 @@
+How To Do Homework
+
+1. git pull
+
+2. Do your business
+
+3. git status
+
+4. git add (whatever git status printed) 
+
+5. git commit -m "Insert a message"
+
+6. git push

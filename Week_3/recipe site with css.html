@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+  <meta name="author" content="Richelle Newby">
+    <link rel="stylesheet" type="text/css" href="css/layout-1.css">
+    <style type="text/css">
+    /* transparent blue bg, and minimum height so we can keep track of our divs and semantic markup elements without having to add content. */
+
+    html {
+        background: url(http://www.nationalgeographic.com/content/dam/travel/Guide-Pages/north-america/caribbean/Jamaica/Jamaica_NationalGeographic_1247385.jpg) no-repeat center center fixed;
+        background-size: cover;
+    }
+
+    header,
+    section,
+    footer,
+    main {
+        min-height: 100px;
+        /* RGBA color, red, green, blue (0-255) and alpha (0-1) */
+        background: linear-gradient(red, yellow, green);
+    }
+
+    div.wrapper {
+        width: 1000px;
+        /* use margin 0 auto to center our wrapper div within the browser window */
+        margin: 0 auto;
+        /* add a little padding so we can see how child elements stack more clearly */
+        padding: 30px;
+    }
+
+    header,
+    footer {
+        width: 100%;
+    }
+    /* Define these after adding to html! Notice the clear issue with floating! */
+
+    article {
+        width: 600px;
+        float: left;
+        /* option 2:  add some margins; */
+        /* 600-20-20=560px */
+        /* width: 560px;
+            margin: 0px 20px; */
+    }
+
+    aside {
+        width: 300px;
+        height: 2000px;
+        /* Define a height so we can see it better */
+        min-height: 424px;
+        float: right;
+        /* option 2:  add some margins; */
+        /* 300-20-20=260px */
+        /* width: 260px;
+            margin: 0px 20px; */
+    }
+    /* use this to fix the container/wrapping float issues */
+
+    br.clear {
+        clear: both;
+        height: 0;
+    }
+    </style>
+    <div class="wrapper">
+</head>
+
+<body>
+    <!--Main Menu -->
+    <header>
+        <h3 style="font-family: comic sans ms" ;>Coast To Coast Recipes</h3>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Browse Recipes</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <aside>
+            <nav>
+                <h2 style="font-family: comic sans ms" ;> More Like This</h2>
+                <ul>
+                    <li><a href="#">Brown Stew Chicken</a></li>
+                    <li><a href="#"> Fried Chicken</a></li>
+                    <li><a href="#"> Jamaican Oxtail</a></li>
+                    <li><a href="#">Curry Chicken</a></li>
+                </ul>
+            </nav>
+        </aside>
+        <article>
+            <h2>Jamaican Jerk Chicken</h2>
+            <!-- Inidividual image, with caption using figure and figcaption -->
+            <figure>
+                <img src="http://files.recipetips.com/images/recipe/poultry/jamaican_jerk_chick.jpg">
+                <figcaption>
+                    <h4>Image of completed dish</h4>
+                </figcaption>
+            </figure>
+        </article>
+        <div>
+            <h1>Jamaican Jerk Chicken</h1>
+            <h1>  </h1>
+            <div>
+                <p>For those of you not familiar with Jerk, it is a spicy, sweet, tangy and <span style="color:red"> HOT </span>seasoning for grilled meat, pork and chicken particularly. This spice blend recipe will make enough for several batches, but remember, the idea is to put as much on the meat as you can get to stick.</p>
+            </div>
+            <div>
+                <h3>~INGREDIENTS~</h3>
+                <ul>
+                    <li>1/2 cup malt vinegar (or white vinegar)</li>
+                    <li>2 Tbsp dark rum</li>
+                    <li>2 Scotch bonnet peppers (or habaneros), with seeds, chopped</li>
+                    <li>1 red onion, chopped</li>
+                    <li>4 green onion tops, chopped</li>
+                    <li>1 Tbsp dried thyme or 2 Tbsp fresh thyme leaves, chopped</li>
+                    <li>2 Tbsp olive oil</li>
+                    <li>2 teaspoons salt</li>
+                    <li>2 teaspoons freshly ground black pepper</li>
+                    <li>4 teaspoons ground allspice</li>
+                    <li>4 teaspoons ground cinnamon</li>
+                    <li>4 teaspoons ground nutmeg</li>
+                    <li>4 teaspoons ground ginger</li>
+                    <li>2 teaspoons molasses</li>
+                    <li>1 (5 or 6 pound) roasting chicken, cut in half, lengthwise</li>
+                    <li>1/2 cup lime juice</li>
+                    <li>Salt and pepper</li>
+                </ul>
+            </div>
+            <div>
+                <h3>~SAFETY PRECAUTION~</h3>
+                <p> Scotch Bonnet and Habanero chile peppers are <span style="color:red">very hot</span> and can cause extreme pain if they come in contact with your eyes. We strongly recommend wearing protective gloves while handling the chilies and the jerk paste.
+                </p>
+            </div>
+            <div>
+                <h3>~DIRECTIONS~</h3>
+                <ol>
+                    <li> Put vinegar, rum, hot peppers, onion, green onion tops, thyme, olive oil, salt, pepper, allspice, cinnamon, nutmeg, ginger, and molasses into a blender. Pulse until mostly smooth.</li>
+                    <li> Place chicken in a large freezer bag, or in a large roasting pan or baking dish. Pour lime juice over the chicken and coat well.</li>
+                    <li> Add the jerk paste to the chicken pieces and coat well</li>
+                    <li>Seal the bag or cover the chicken in the pan with plastic wrap. Refrigerate overnight.</li>
+                    <li> When you are ready to cook the chicken, remove chicken from the marinade bag or pan.</li>
+                    <li>Put the remaining marinade into a small saucepan </li>
+                    <li>Bring to a boil, reduce heat and simmer for 10 minutes. Set aside to use as a basting sauce for the chicken.<span style="font-style: italic;">If you want you can reserve a little of the marinade (once boiled for 10 minutes since it has been in contact with raw chicken) to serve with the chicken or to mix with some ketchup and a dash of soy sauce for a serving sauce.</span>
+                    </li>
+                    <div>
+                        <h4>Grilling Method</h4>
+                        <p>Preheat grill to medium high. Sprinkle chicken halves with salt and pepper. Place chicken halves, skin side down on the grill grates. Cover. Cook for approximately one hour, keeping the internal grill temperature between 350°F and 400°F, turning the chickens occasionally and basting with marinade, until the chicken halves are cooked through. The chicken is done when the juices run clear (not pink) when a knife tip is inserted into both the chicken breast and thigh, about 165-170°F for the breast and 180-185°F for the thigh. Transfer chicken to platter. Tent loosely with foil to keep warm and let stand 15 minutes.</p>
+                        <h4> </h4>
+                        <h4>Oven Method</h4>
+                        <p>Preheat oven to 350°F. Place chicken halves in a rimmed baking pan, skin side up. Roast until chicken halves are cooked through, about 50-60 minutes. The chicken is done when the juices run clear (not pink) when a knife tip is inserted into both the chicken breast and thigh, about 165-170°F for the breast and 180-185°F for the thigh. Transfer chicken to platter. Tent loosely with foil to keep warm and let stand 15 minutes. Cut chicken into pieces. Serve with black beans and rice.
+                        </p>
+                        <p>Serves 6 to 8</p>
+                    </div>
+                </ol>
+            </div>
+        </div>
+        <!-- Copy figure stuff X5 -->
+        <!-- Andfinally, a footer for our page!  -->
+        <br class="clear" />
+    </main>
+    <footer>
+        &copy; 2017 Copyright. All rights reserved.
+        <!-- social links, We will cover font awesome icons next week! -->
+        <ul>
+            <li>facebook </li>
+            <li>twitter </li>
+            <li>instagram </li>
+        </ul>
+    </footer>
+    </div>
+</body>
+
+</html>
