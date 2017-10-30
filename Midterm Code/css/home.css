@@ -86,6 +86,8 @@ html {
 
 
 
+
+
 /*________________ NAVIGATION CSS ___________ */
 
 .topnav {
@@ -155,6 +157,8 @@ html {
 
 
 
+
+
 /*________________ BODY________________ */
 
 h1.centered {
@@ -168,7 +172,7 @@ h1.centered {
 }
 
 a.button {
-    position: fixed;
+    position: absolute;
     top: 70%;
     left: 45%;
     font: 40px 'Rubik', cursive;

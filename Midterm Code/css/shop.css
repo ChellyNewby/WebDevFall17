@@ -68,6 +68,9 @@ html {
 
 
 
+
+
+
 /*________________ NAVIGATION CSS ___________ */
 
 .topnav {
@@ -133,6 +136,9 @@ html {
 
 
 
+
+
+
 /*________________ BODY________________ */
 
 body {
@@ -171,6 +177,9 @@ h1 {
 
 
 
+
+
+
 /* GALLERY CSS */
 
 div.gallery {}
@@ -197,6 +206,9 @@ div.gallery img:hover {
     float: left;
     width: calc(100%/3);
 }
+
+
+
 
 
 
@@ -261,6 +273,9 @@ div.gallery img:hover {
 }
 
 
+
+
+
 /* MEDIA QUERIES */
 
 @media only screen and (max-width: 900px) {
@@ -296,6 +311,15 @@ div.gallery img:hover {
 }
 
 
+@media only screen and (max-width: 400px) {
+    .gresponsive {
+        width: 100%;
+        margin: 0 auto;
+    }
+}
+
+
+
 
 .footer {
     position: relative;
@@ -312,43 +336,6 @@ div.gallery img:hover {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-}
-
-@media only screen and (max-width: 600px) {
-    .gresponsive {
-        width: 100%;
-    }
-}
 
 
 
