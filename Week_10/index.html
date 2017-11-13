@@ -1,14 +1,54 @@
 <!DOCTYPE html>
 <html>
+<style type="text/css">
+html {
+    background: url("memphis-colorful.png")
+}
+
+.button {
+    background-color: #555555;
+    /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.button1 {
+    background-color: #4CAF50;
+}
+
+.button2 {
+    background-color: #f44336;
+}
+
+p {
+    font-size: 20px;
+    font-family: Times New Roman;
+}
+
+.centered {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+</style>
 
 <body>
-    <p> Can I guess your favorite color? </p>
-    <button onclick="GuessingGame()">You can try!!</button>
+    <div class="centered">
+        <h1> Can I guess your favorite color? </h1>
+        <button class="button" onclick="GuessingGame()">You can try!!</button>
 </body>
 <script type="text/javascript" src="scripts.js"></script>
 <p id="demo"></p>
-<button onclick="Answer(0)">Yes</button>
-<button onclick="Answer(1)">No</button>
+<button class="button button1" onclick="Answer(0)">Yes</button>
+<button class="button button2" onclick="Answer(1)">No</button>
 <p id="demo2"></p>
+</div>
+</body>
 
 </html>
