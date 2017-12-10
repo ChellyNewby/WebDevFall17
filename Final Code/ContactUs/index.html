@@ -88,11 +88,7 @@
     <br>
     <div class="form-container">
         <br>
-        <form>
-            <div class="form-group">
-                <label class='control-label' for="fileattach">Upload an image (if applicable)</label>
-                <input type="file" class="form-control-file" id="fileattach">
-            </div>
+        <form action="mail.php" method="POST">
             <div class="form-group ">
                 <label class='control-label' for="fname">First Name</label>
                 <div class="input-group">
@@ -128,7 +124,7 @@
                     <div class="input-group-addon">
                         <i class="fa  fa-th-list"></i>
                     </div>
-                    <select class="form-control" id="reason">
+                    <select name="reason" class="form-control" id="reason">
                         <option value="" disabled selected>Select your option...</option>
                         <option value="Brokenitem">Broken item</option>
                         <option value="WrongItemSent">Wrong Item Sent</option>
