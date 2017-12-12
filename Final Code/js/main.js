@@ -18,9 +18,6 @@ function setpos(element, factor) {
 
     $(element).css('background-position', '50% ' + posy + 'px');
 
-    // use this to have parralax scrolling vertical and horizontal
-    //$(element).css('background-position', posx+'px '+posy+'px');
-}
 
 $(document).ready(function() {
     parallax();
