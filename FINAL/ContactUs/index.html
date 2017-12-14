@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Contact Us</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/main.css">
+    <style type="text/css">
+    @import url('https://fonts.googleapis.com/css?family=Open+Sans|Rubik:900');
+
+    html,
+    body {
+        background: url(../img/IMG_1706.JPG) no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        margin: 0;
+        padding: 0;
+    }
+    </style>
+</head>
+
+<body>
+    <!--NavBar -->
+    <nav class="navbar navbar-toggleable-md ">
+        <button class="navbar-toggler navbar-toggler-right custom-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand" href="../index.html"> <img id="logo" src='../img/logo_pb.png' onmouseover="this.src='../img/logo_gb.png';"
+         onmouseout="this.src='../img/logo_pb.png';" width=90 height=90 alt="EN Logo"></a>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="../index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../Shop/index.html">Shop<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          About
+        </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item active" href="../MissionAndValues/index.html">What We Value</a>
+                        <a class="dropdown-item" href="../WhoWeAre/index.html">Who We Are</a>
+                    </div>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link " href="../ContactUs/index.html">Contact Us</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <br>
+    <br>
+    <br>
+    <div class=headings>
+        <h1> CONTACT US </h1>
+    </div>
+    <br>
+    <br>
+    <div class="row social-media">
+        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
+            <a href="https://www.facebook.com/esthernzuzi/"><img  src="../img/fb.png" width="100" height="100" alt="Facebook">
+            </a>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
+            <a href="https://twitter.com/esthernzuziLLC"><img  src="../img/twitter.png" width="100" height="100" alt="EN Logo">
+            </a>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
+            <a href="https://www.instagram.com/esthernzuzillc/"><img  src="../img/insta.png" width="100" height="100" alt="EN Logo">
+            </a>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
+            <a href="https://www.pinterest.com/esthernzuziLLC/"><img src="../img/pin.png" width="100" height="100" alt="EN Logo">
+            </a>
+        </div>
+    </div>
+    <br>
+    <br>
+    <div class="form-container">
+        <br>
+        <form action="mail.php" method="POST">
+            <div class="form-group ">
+                <label class='control-label' for="fname">First Name</label>
+                <div class="input-group">
+                    <div class="input-group-addon">
+                        <i class="fa  fa-user-circle-o"></i>
+                    </div>
+                    <input type="text" class="form-control" id="fname" name="fname" placeholder="Your name.." required>
+                </div>
+            </div>
+            <div class="form-group ">
+                <label class='control-label' for="lname">Last Name</label>
+                <div class="input-group">
+                    <div class="input-group-addon">
+                        <i class="fa  fa-user-circle-o"></i>
+                    </div>
+                    <input type="text" id="lname" class="form-control" name="lname" placeholder="Your last name.." required>
+                </div>
+            </div>
+            <div class="form-group ">
+                <label class="control-label " for="email">
+                    Email
+                </label>
+                <div class="input-group">
+                    <div class="input-group-addon">
+                        <i class="fa fa-envelope-o"></i>
+                    </div>
+                    <input class="form-control" required id="email" name="email" type="text" />
+                </div>
+            </div>
+            <div class="form-group ">
+                <label for="reason">Reason For Message</label>
+                <div class="input-group">
+                    <div class="input-group-addon">
+                        <i class="fa  fa-th-list"></i>
+                    </div>
+                    <select name="reason" class="form-control" id="reason">
+                        <option value="" disabled selected>Select your option...</option>
+                        <option value="Brokenitem">Broken item</option>
+                        <option value="WrongItemSent">Wrong Item Sent</option>
+                        <option value="JustSayingHi!">Just Saying Hi!</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-group">
+            </div>
+            <div class="form-group ">
+                <label class='control-label' for="subject">Message</label>
+                <div class="input-group">
+                    <div class="input-group-addon">
+                        <i class="fa fa-sticky-note-o "></i>
+                    </div>
+                    <textarea id="subject" class="form-control" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+                </div>
+            </div>
+            <br>
+            <input class="btn btn-primary" type="submit" value="Submit">
+            <br>
+            <br>
+        </form>
+    </div>
+    < <!--FOOTER -->
+        <footer class="footer">
+            <div class="container">
+                <span style="font-weight: bold; float: left; ">&copy; 2017 Copyright. All rights reserved.</span>
+                <ul class="social-network social-circle">
+                    <li><a href="https://www.facebook.com/esthernzuzi/" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="https://twitter.com/esthernzuziLLC" class="icoTwitter" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+                    <li><a href="https://www.instagram.com/esthernzuzillc/" class="icoTwitter" id="insta" title="Instagram"><i class="fa fa-instagram"></i></a></li>
+                    <li><a href="https://www.pinterest.com/esthernzuziLLC/" class="icoTwitter" id="pin" title="Pinterest"><i class="fa fa-pinterest"></i></a></li>
+                </ul>
+            </div>
+        </footer>
+        <!-- jQuery first, then Tether, then Bootstrap JS. -->
+        <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="../js/main.js"></script>
+        <a onclick="topFunction()" id="back-to-top" href="#" class="btn btn-primary btn-md back-to-top" role="button" title="Back To Top" data-toggle="tooltip" data-placement="top"><i class="fa fa-chevron-up"></i></a>
+</body>

@@ -1,0 +1,739 @@
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    /* Margin bottom by footer height */
+    margin-bottom: 60px;
+}
+
+
+
+nav {
+    z-index: 1;
+    background-color: rgba(233, 44, 156, 0.3);
+}
+
+
+
+nav li a {
+    float: left;
+    display: inline-block;
+    font-family: 'Rubik', serif;
+    text-align: center;
+    width: 200px;
+    padding: 20px;
+    padding-bottom: 0px;
+    font-size: 20px;
+    color: #FFFFFF;
+}
+
+.navbar-nav>li {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+nav li a:hover {
+
+    box-shadow: 0 3px 0 rgba(159, 205, 97, 1);
+    text-decoration: none;
+    padding-bottom: 5px;
+    color: #FFF;
+}
+
+.active a {
+
+    color: #a4f033!important;
+}
+
+.dropdown-menu {
+    background-color: rgba(74, 87, 158, 0.8);
+}
+
+.dropdown-menu .dropdown-item {
+    color: #fff !important;
+    background-color: transparent;
+}
+
+.dropdown-menu .dropdown-item .active a {
+    color: #a4f033!important;
+    background-color: transparent;
+}
+
+
+
+
+
+
+.btn-primary,
+.btn-primary:hover,
+.btn-primary:active,
+.btn-primary:visited {
+    background-color: rgba(233, 44, 158, 0.8)!important;
+    border-color: rgba(233, 44, 158, 0.8);
+}
+
+
+.custom-toggler.navbar-toggler {
+    border-color: #FFFFFF;
+}
+
+.custom-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='#FFFFFF' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*--------------BACKGROUND VIDEO FOR HOMEPAGE---------------*/
+
+.video-container {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.video-container video {
+    /* Make video to at least 100% wide and tall */
+    min-width: 100%;
+    min-height: 100%;
+    /* Setting width & height to auto prevents the browser from stretching or squishing the video */
+    width: auto;
+    height: auto;
+    /* Center the video */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -100;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* TYPERWRITER EFFECT CSS INSPIRED BY CSS-TRICKS */
+
+.centerh1 {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: fixed;
+
+    color: rgba(248, 248, 255, 1);
+
+    text-align: center;
+}
+
+.btn-lg {
+    border-radius: 24px;
+}
+
+
+.typewriter h1 {
+    overflow: hidden;
+    font: 90px 'Manuale', serif, bold;
+    /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid rgba(159, 205, 97, 1);
+    /* The typwriter cursor */
+    white-space: nowrap;
+    /* Keeps the content on a single line */
+    margin: 0 auto;
+    /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em;
+    /* Adjust as needed */
+    animation: typing 3.5s steps(40, end),
+    blink-caret .75s step-end infinite;
+}
+
+@media (max-width: 768px) {
+    .typewriter h1 {
+        white-space: normal;
+    }
+
+    .dropdown-menu {
+        background-color: transparent;
+        border-color: transparent;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* The typing effect */
+
+@keyframes typing {
+    from {
+        width: 0
+    }
+
+    to {
+        width: 100%
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* The typewriter cursor effect */
+
+@keyframes blink-caret {
+    from,
+    to {
+        border-color: transparent
+    }
+
+    50% {
+        border-color: rgba(159, 205, 97, 1);
+    }
+}
+
+.img-responsive {
+    width: 100%;
+    height: auto;
+    padding: 20px !important;
+}
+
+
+
+.gcontainer {
+    padding: 20px;
+    position: relative;
+}
+
+.img-wrapper {
+    position: relative;
+}
+
+.img-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0);
+    transition: background 0.5s ease;
+}
+
+.img-overlay button {
+    visibility: hidden;
+}
+
+
+
+.img-overlay:hover {
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.img-overlay:hover button {
+    visibility: visible;
+}
+
+.img-overlay:before {
+    content: ' ';
+    display: block;
+    /* adjust 'height' to position overlay content vertically */
+    height: 50%;
+}
+
+.parallaxbox {
+    position: relative;
+    height: 320px;
+
+    background: #444;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center center;
+
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+
+    z-index: 9;
+}
+
+
+.footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    height: auto;
+    /* Set the fixed height of the footer here */
+    line-height: 40px;
+    /* Vertically center the text there */
+    color: #ffffff;
+    background-color: rgba(233, 44, 156, 0.05);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*=========================
+  Icons
+ ================= */
+
+
+/* footer social icons */
+
+ul.social-network {
+    list-style: none;
+    display: inline;
+    margin-left: 0 !important;
+    padding: 0;
+    float: right;
+    background: transparent;
+}
+
+ul.social-network li {
+    display: inline;
+    margin: 0 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* footer social icons */
+
+.social-network a.icoFacebook:hover {
+    background-color: #3B5998;
+}
+
+.social-network a.icoTwitter:hover {
+    background-color: #33ccff;
+}
+
+#pin:hover {
+    background-color: #cb2027;
+}
+
+#insta:hover {
+    background-color: #125688;
+    ;
+}
+
+
+.social-network a.icoFacebook:hover i,
+.social-network a.icoTwitter:hover i,
+{
+    color: #fff;
+}
+
+a.socialIcon:hover,
+.socialHoverClass {
+    color: #44BCDD;
+}
+
+.social-circle li a {
+    display: inline-block;
+    position: relative;
+    margin: 0 auto 0 auto;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    text-align: center;
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+}
+
+.social-circle li i {
+    margin: 0;
+    line-height: 50px;
+    text-align: center;
+}
+
+.social-circle li a:hover i,
+.triggeredHover {
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -ms--transform: rotate(360deg);
+    transform: rotate(360deg);
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+    transition: all 0.2s;
+}
+
+.social-circle i {
+    color: #fff;
+    -webkit-transition: all 0.8s;
+    -moz-transition: all 0.8s;
+    -o-transition: all 0.8s;
+    -ms-transition: all 0.8s;
+    transition: all 0.8s;
+}
+
+
+
+
+.headings {
+    width: 100%;
+    min-height: 90px;
+    background-color: rgb(233, 44, 156);
+    padding: 0;
+    margin: 0;
+}
+
+.headings h1 {
+    text-align: center;
+    font-family: 'Rubik', serif;
+    font-size: 75px;
+    color: white;
+    text-align: center;
+}
+
+.headings h2 {
+
+    text-align: center;
+    font-family: 'Rubik', serif;
+    font-size: 60px;
+    color: white;
+    text-align: center;
+}
+
+.team_member {
+    width: 100%;
+    min-height: 300px;
+    padding: 0;
+    margin: 0;
+    background-color: rgb(12, 98, 145);
+    display: inline-block;
+}
+
+.team_member p {
+    font-family: 'Open Sans', serif;
+    padding: 0;
+    font-size: 20px;
+    color: white;
+    line-height: 200%;
+}
+
+.team_member a {
+    font-style: italic;
+    color: yellow;
+    font-style: normal;
+}
+
+.team_member img {
+    margin: 30px 60px 120px 30px;
+
+    float: left;
+}
+
+#back-to-top {
+    cursor: pointer;
+    position: fixed;
+    bottom: 50px;
+    right: 20px;
+    display: none;
+    z-index: 34;
+}
+
+.social-media {
+    margin: 0 auto;
+    text-align: center;
+    width: 420px;
+}
+
+.social-media img {
+    display: inline-block;
+    transition: transform .5s;
+}
+
+.social-media img:hover {
+    transform: scale(1.5);
+}
+
+.form-container {
+    border-radius: 5px;
+    background-color: rgba(61, 181, 173, 0.8);
+    margin: 50px;
+}
+
+
+#myModalLabel {
+    font-size: 20px;
+    font-style: italic;
+}
+
+form {
+    margin: 30px;
+}
+
+
+label {
+    font-family: Open Sans, serif;
+    font-weight: bold;
+}
+
+.paypal_btn {
+
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    background: rgb(61, 181, 173);
+
+    cursor: pointer;
+    outline: none;
+    border-radius: 8px;
+    transition: background 1s
+}
+
+.paypal_btn:hover {
+    background: rgb(146, 208, 80);
+}
